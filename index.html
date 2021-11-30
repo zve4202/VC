@@ -8,10 +8,10 @@
   <body>
     <div class="container">
       <div class="info">
-        <div>
+        
           <img src="avatar.jpg" alt="Моя фотка" class="avatar" />
-        </div>
-        <div>
+        
+        <div class="info-text">
           <h1>Вячеслав Зубачев</h1>
           <p>
             <em
@@ -64,23 +64,39 @@
       </div>
       <div class="card bg-red">
         <h2>Мой репозиторий</h2>
-        <a href="github.html">Посмотреть список</a>
+        <ul class="link-list">
+          <li>
+            <a href="https://github.com/zve4202" target="_blank"
+              >Профиль на GitHub</a
+            >
+          </li>
+        </ul>
       </div>
-      <h2>Связаться со мной</h2>
-      <form action="/">
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Укажиде ваше имя..." />
-        <br />
-        <label for="email">Ваше Email:</label>
-        <input type="email" id="email" placeholder="Укажиде ваш Email..." />
-        <br />
-        <label for="text">Сообщение:</label>
-        <br />
-        <textarea id="text"></textarea>
-        <br />
-        <input type="submit" value="Связвться" />
-      </form>
+      <div class="contact">
+        <h2>Связаться со мной</h2>
+        <form action="/">
+          <div class="row">
+          <div class="form-group">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" placeholder="Укажиде ваше имя..." />
+          </div>
+          <div class="form-group">
+            <label for="email">Ваш email:</label>
+            <input type="email" id="email" placeholder="Укажиде ваш Email..." />             
+          </div>
+        </div>
+          <div class="form-group">
+            <label for="text">Сообщение:</label>
+            <textarea id="text"></textarea>              
+          </div>
+          <input type="submit" class="btn" value="Связвться" />
+        </form>
+      </div>
+      <!-- <div class="position">
+        <div class="box"></div>
+      </div> -->
     </div>
-    <div style="margin-bottom: 500px"></div>
+    
+    <div style="margin-bottom: 50px"></div>
   </body>
 </html>
